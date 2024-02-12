@@ -7,4 +7,5 @@
 
     spl_autoload_register($print);
 
+    define('HOST', 'localhost');
 ?>
