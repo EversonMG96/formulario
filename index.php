@@ -1,5 +1,7 @@
 <?php 
     include('config.php');
+    require_once'src/classes/mysql.php';
+    Mysql::test();
 ?>
 
 <!DOCTYPE html>

@@ -1,8 +1,8 @@
 <?php 
 
     class Mysql {
-       public static function registration() {
-            echo '<h1>Test_Function</h1>';
+       public static function test() {
+            echo '<h3>test function<h3>';
        }
     }
 
