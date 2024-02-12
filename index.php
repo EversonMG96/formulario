@@ -1,8 +1,3 @@
-<?php 
-    include('config.php');
-    require_once'src/classes/mysql.php';
-    Mysql::conexion();
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,20 +12,21 @@
     <div class="form_cd"> 
         
         <?php 
+            
 
             if(isset($_POST['acao']) && $_POST['form'] == 'f_form') {
-                $nome = $_POST['name'];
+                $nome = $_POST['nome'];
                 $email = $_POST['email'];
                 $senha = $_POST['senha'];
 
-                if($name == '') {
-                    Form::alert('erro', 'nome vazio?');
+                if($nome == '') {
+                    Form::alert('erro', 'nome vazio!');
                 } else if($email == '') {
-                    Form::alert('erro', 'email vazio?');
+                    Form::alert('erro', 'email vazio!');
                 } else if($senha == '') {
-                    Form::alert('erro', 'senha vazia?'); 
+                    Form::alert('erro', 'senha vazia!'); 
                 }else {
-                    Form::Register($nome, $email, $senha);
+                    Form::Cadastrar($nome, $email, $senha);
                     Form::alert('sucesso', 'Usuario'.$nome.'cadastrado com sucesso!');
                 }
             }
@@ -42,7 +38,7 @@
             <div><input type="text" name="nome" placeholder="Nome" required></div> 
             <div><input type="text" name="email" placeholder="Email" required></div>
             <div><input type="text" name="senha" placeholder="Senha" required></div>
-            <div><input type="submit" name="acao" value="cadastrar"></div>
+            <div><input type="submit" name="acao" value="Cadastrar"></div>
             <div><input type="hidden" name="form" placeholder="f_form"></div>
         </form>
     </div>  

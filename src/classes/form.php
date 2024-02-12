@@ -2,7 +2,7 @@
 
     class Form {
 
-        public static function alert($tipo, $mensagem) {
+        public static function Alert($tipo, $mensagem) {
 
             if($tipo == 'erro') {
                 echo '<div style="color:red; font-size:25px;">'.$mensagem.'</div>';
@@ -14,8 +14,9 @@
             
         }
 
-        public static function Register($nome, $email, $senha) {
-
+        public static function cadastrar($nome, $email, $senha) {
+            $sql = Mysql::conexion()->prepare("INSERT INTO `formulario` VALUES (null,?,?,?)");
+            $sql->execute(array($nome, $email, $senha)); 
         }
     }
 
