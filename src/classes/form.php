@@ -14,8 +14,8 @@
             
         }
 
-        public static function Register() {
-            
+        public static function Register($nome, $email, $senha) {
+
         }
     }
 

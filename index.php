@@ -30,8 +30,8 @@
                 } else if($senha == '') {
                     Form::alert('erro', 'senha vazia?'); 
                 }else {
-                    Form::Register($name, $email, $senha);
-                    Form::alert('sucesso', 'Usuario'.$name.'cadastrado com sucesso!');
+                    Form::Register($nome, $email, $senha);
+                    Form::alert('sucesso', 'Usuario'.$nome.'cadastrado com sucesso!');
                 }
             }
 
