@@ -9,4 +9,5 @@
 
     define('HOST', 'localhost');
     define('DATABASE', 'form_cadastro');
+    define('USER', 'root');
 ?>
