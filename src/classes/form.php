@@ -15,7 +15,7 @@
         }
 
         public static function Register() {
-
+            
         }
     }
 
