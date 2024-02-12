@@ -14,7 +14,29 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <div class="form_cd">  
+    <div class="form_cd"> 
+        
+        <?php 
+
+            if(isset($_POST['acao']) && $_POST['form'] == 'f_form') {
+                $nome = $_POST['name'];
+                $email = $_POST['email'];
+                $senha = $_POST['senha'];
+
+                if($name == '') {
+                    Form::alert('erro', 'nome vazio?');
+                } else if($email == '') {
+                    Form::alert('erro', 'email vazio?');
+                } else if($senha == '') {
+                    Form::alert('erro', 'senha vazia?'); 
+                }else {
+                    Form::Register($name, $email, $senha);
+                    Form::alert('sucesso', 'Usuario'.$name.'cadastrado com sucesso!');
+                }
+            }
+
+        ?>
+
         <h2>Cadastre-se</h2>
         <form action="" method="post">
             <div><input type="text" name="nome" placeholder="Nome" required></div> 
