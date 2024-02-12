@@ -8,4 +8,5 @@
     spl_autoload_register($print);
 
     define('HOST', 'localhost');
+    define('DATABASE', 'form_cadastro');
 ?>
