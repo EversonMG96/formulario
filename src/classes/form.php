@@ -14,7 +14,7 @@
             
         }
 
-        public static function cadastrar($nome, $email, $senha) {
+        public static function Cadastrar($nome, $email, $senha) {
             $sql = Mysql::conexion()->prepare("INSERT INTO `formulario` VALUES (null,?,?,?)");
             $sql->execute(array($nome, $email, $senha)); 
         }

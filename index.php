@@ -38,12 +38,12 @@
         ?>
 
         <h2>Cadastre-se</h2>
-        <form method="post">
+        <form method="POST">
             <div><input type="text" name="nome" placeholder="Nome" required></div> 
             <div><input type="text" name="email" placeholder="Email" required></div>
             <div><input type="text" name="senha" placeholder="Senha" required></div>
             <div><input type="submit" name="acao" value="Cadastrar"></div>
-            <div><input type="hidden" name="form" placeholder="f_form"></div>
+            <div><input type="hidden" name="form" value="f_form"></div>
         </form>
     </div>  
 </body>
