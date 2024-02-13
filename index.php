@@ -1,4 +1,8 @@
-
+<? 
+    require_once 'config.php';
+    Mysql::conexion();
+    
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,7 +38,7 @@
         ?>
 
         <h2>Cadastre-se</h2>
-        <form action="" method="post">
+        <form method="post">
             <div><input type="text" name="nome" placeholder="Nome" required></div> 
             <div><input type="text" name="email" placeholder="Email" required></div>
             <div><input type="text" name="senha" placeholder="Senha" required></div>

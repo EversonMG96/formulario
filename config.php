@@ -7,8 +7,8 @@
 
     spl_autoload_register($print);
 
-    define('HOST', 'localhost');
-    define('DATABASE', 'form_cadastro');
-    define('USER', '');
-    define('PASSWORD', '');
+    define('HOST','localhost');
+    define('DATABASE','form_cadastro');
+    define('USER','root');
+    define('PASSWORD','');
 ?>
