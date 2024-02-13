@@ -25,9 +25,9 @@
 
                 if($nome == '') {
                     Form::alert('erro', 'nome vazio!');
-                } else if($email == '') {
+                } elseif($email == '') {
                     Form::alert('erro', 'email vazio!');
-                } else if($senha == '') {
+                } elseif($senha == '') {
                     Form::alert('erro', 'senha vazia!'); 
                 }else {
                     Form::Cadastrar($nome, $email, $senha);

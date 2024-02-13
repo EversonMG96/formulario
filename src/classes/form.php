@@ -1,6 +1,6 @@
 <?php
 
-    class Form {
+    class form {
 
         public static function Alert($tipo, $mensagem) {
 
