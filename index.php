@@ -1,7 +1,6 @@
 <? 
     require_once 'config.php';
-    Mysql::conexion();
-    
+    /*require_once 'classes/Form.php';*/
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,28 +14,6 @@
 <body>
     <div class="form_cd"> 
         
-        <?php 
-            
-
-            if(isset($_POST['acao']) && $_POST['form'] == 'f_form') {
-                $nome = $_POST['nome'];
-                $email = $_POST['email'];
-                $senha = $_POST['senha'];
-
-                if($nome == '') {
-                    Form::alert('erro', 'nome vazio!');
-                } elseif($email == '') {
-                    Form::alert('erro', 'email vazio!');
-                } elseif($senha == '') {
-                    Form::alert('erro', 'senha vazia!'); 
-                }else {
-                    Form::Cadastrar($nome, $email, $senha);
-                    Form::alert('sucesso', 'Usuario'.$nome.'cadastrado com sucesso!');
-                }
-            }
-
-        ?>
-
         <h2>Cadastre-se</h2>
         <form method="POST">
             <div><input type="text" name="nome" placeholder="Nome" required></div> 
