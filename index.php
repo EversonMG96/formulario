@@ -1,6 +1,6 @@
 <? 
     require_once 'config.php';
-    /*require_once 'classes/Form.php';*/
+    require_once 'classes/Form.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

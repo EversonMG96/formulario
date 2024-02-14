@@ -13,14 +13,14 @@
         $senha = $_POST['senha'];
 
         if($nome == '') {
-            Form::Alert('erro', 'nome vazio!');
+            echo Form::Alert('erro', 'nome vazio!');
         } elseif($email == '') {
-            Form::Alert('erro', 'email vazio!');
+            echo Form::Alert('erro', 'email vazio!');
         } elseif($senha == '') {
-            Form::Alert('erro', 'senha vazia!'); 
+             echo Form::Alert('erro', 'senha vazia!'); 
         }else {
             Form::Cadastrar($nome,$email,$senha);
-            Form::Alert('sucesso', 'Usuario'.$nome.'cadastrado com sucesso!');
+            echo Form::Alert('sucesso', 'Usuario'.$nome.'cadastrado com sucesso!');
         }
     }
 
